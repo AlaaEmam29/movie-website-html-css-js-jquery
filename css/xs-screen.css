@@ -1,0 +1,28 @@
+@media screen and (max-width :575.98px) {
+body{
+    overflow-x: hidden;
+}
+.media{
+    margin-bottom:2rem;
+}
+
+    .movieRow{
+        margin: auto;
+        width: fit-content;
+    }
+    .input-group{
+        width: 70%;
+        margin: auto;
+    }
+    .movieData img ,.movieLayer{
+        width: 423px ;
+        height:586px ;
+        border-radius: 0.25rem;
+
+        }
+        .movieRow{
+            position: relative;
+            left: 12%;
+        }
+}
+

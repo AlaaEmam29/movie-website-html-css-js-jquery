@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/xs-screen.css" rel="stylesheet">
+    <link href="css/sm-screen.css" rel="stylesheet">
+    <link href="css/md-screen.css" rel="stylesheet">
+    <link href="css/lg-screen.css" rel="stylesheet">
+    <link href="css/xl-screen.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+<title>Moive website</title>
+</head>
+<body>
+<section class="sideNav">
+    <div class="headerNav text-center">
+        <div class="logoNav">
+<img src="img/logo.png" alt="logo">
+        </div>
+        <div class="menuIcon" id="toggleBtn">
+<i     class="fa fa-align-justify">
+</i>
+        </div>
+        <div class="socialIcon">
+            <div class="globe">
+<i                 class="fas fa-globe"></i>
+            </div>
+            <div class="share">
+                <i class="fas fa-share-alt">
+
+                </i>
+            </div>
+        </div>
+    </div>
+
+    <div class="navMenu">
+        <ul class="nav flex-column">
+            <li class="nav-item ">
+              <a class="nav-link nav1 active" aria-current="page" rel="NowPlaying" href="#main">Now Playing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav2" rel="Popular" href="#main">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav3" rel="TopRated" href="#main">Top Rated</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav4" rel="Trending" href="#main">Trending</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link nav5" rel="Upcoming" href="#main">Upcoming</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav6" rel="NowPlaying" href="#contactUs">Contact Us</a>
+              </li>
+          </ul>
+          <div class="footerNav">
+              <div class="ico">
+                <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+                <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+                <a href="#"><i class="fas fa-globe mx-2"></i></a>
+        
+              </div>
+              <div class="pt-3">
+                <span>Copyright Â© 2019 All Rights Reserved.</span>
+            </div>
+    
+          </div>
+    </div>
+</section>
+
+    <section class="mainBackground" id="main">
+    <div class="container py-5">
+        <div class="row g-3 input-group m-auto">
+            <div class="col-md-6 media">
+              <input type="text" class="form-control" id='searchByWord' placeholder="get movies by word...">
+            </div>
+            <div class="col-md-6 ">
+              <input type="text" class="form-control" id="searchSameArray"  placeholder="search...">
+            </div>
+          </div>
+          
+    </div>
+    <div class="container mCointainer">
+        <div class="row movieRow m-auto" id="AllMovies">
+           
+      
+
+        </div>
+    </div>
+</section>
+
+<section class="contactUs py-5" id='contactUs'>
+<div class="container">
+    <div class="row input-group  m-auto">
+        <div class="col-12">
+            <h3 class="font-h3 pt-3 pb-5">
+                ContactUs...
+            </h3>
+        </div>
+        <div class="col-md-6 mb-5">
+            <input type="text" class="form-control form-validation" id='nameInput'  placeholder="Enter Your Name">
+            <div class="invalid-feedback  ">
+                Your Name is not valid : Name should start with capital letter and [3-8] letters only!!
+            </div>
+          
+          </div>
+          <div class="col-md-6 mb-5">
+            <input type="email" class="form-control form-validation" placeholder="Enter Email" id='emailInput' aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div class="invalid-feedback  ">
+                entre valid email
+            </div>          
+
+        
+          </div>
+          <div class="col-md-6 mb-5">
+            <input type="text" class="form-control form-validation" maxlength="11" id='phoneInput' placeholder="Enter phone">
+            <div class="invalid-feedback  ">
+                entre valid phone
+            </div>          
+          
+          </div>
+          <div class="col-md-6 mb-5">
+            <input type="text" class="form-control form-validation" maxlength="2" id='ageInput' placeholder="Enter Age">
+            <div class="invalid-feedback  ">
+                entre valid Age
+            </div>          
+
+          </div>
+
+          <div class="col-md-6 mb-5">
+            <input type="password" class="form-control form-validation" id='passwordInput' placeholder="Enter Password">
+    
+            <div class="invalid-feedback  ">
+                password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters            </div>     
+          </div>
+    
+          <div class="col-md-6 mb-5">
+            <input type="password" class="form-control form-validation" id='rePasswordInput' placeholder="Enter RePassword">
+            <div class="invalid-feedback  ">
+                entre valid Repassword
+            </div>     
+          </div>
+          <div class="col-12 text-start ">
+            <button type="submit" id="submitBtn" class="btn btn-outline-danger" disabled>Submit</button>
+            <div  class="form-text text-danger my-2 fs-5 " id="requiredInput">All inputs is required</div>
+        </div>
+
+
+
+    </div>
+
+</div>
+</section>
+
+    <!--------------------------------------------->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+    

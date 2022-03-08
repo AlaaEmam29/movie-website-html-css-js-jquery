@@ -1,0 +1,18 @@
+@media screen and (min-width :1200px) and (max-width :1399.98px){
+    .movieRow{
+        width: fit-content;
+    }
+
+    .movieData img ,.movieLayer{
+        width: 350px ;
+        height:525px ;
+        border-radius: 0.25rem;
+
+        }
+        .movieRow{
+            position: relative;
+            left: 3%;
+        }
+
+
+}
